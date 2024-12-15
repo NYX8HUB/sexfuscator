@@ -4,7 +4,7 @@ const unluau = require('unluau'); // Biblioteca de decompilação Luau
 const crypt = require('crypt'); // Para lidar com base64
 
 const app = express();
-const port = 3000;
+const port = 5000;
 
 // Middleware para lidar com requisições JSON
 app.use(bodyParser.json());
