@@ -1,0 +1,24 @@
+<!-- /templates/chat.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Welcome</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Chat with {{ user['username'] }}</h2>
+        <div id="messages">
+            {% for message in messages %}
+                <div class="message">{{ message['message'] }}</div>
+            {% endfor %}
+        </div>
+        <form action="/send_message" method="post">
+            <input type="text" name="message" placeholder="Type your message" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
