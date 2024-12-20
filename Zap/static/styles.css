@@ -1,0 +1,41 @@
+/* /static/styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.login-form, .chat-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.message {
+    background-color: #e9e9e9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
