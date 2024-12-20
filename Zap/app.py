@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # Configurações
 UPLOAD_FOLDER = 'uploads'
-ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif', 'txt', 'pdf', 'docx'}
+ALLOWED_EXTENSIONS = {'png', 'apk', 'jpg', 'jpeg', 'gif', 'txt', 'pdf', 'docx'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Função para gerar um ID numérico aleatório de 15 dígitos
